@@ -1,4 +1,4 @@
-# datasynce
+# datasync
 
 A simple terraform module that facilitates migrating data between two S3 buckets, located in two different AWS accounts, across two different regions.
 
