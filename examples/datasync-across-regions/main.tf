@@ -1,5 +1,5 @@
-module "example_two_regions" {
-    source = "../../."
+module "datasync-across-regions" {
+    source = "../../modules/datasync-across-regions"
     source_bucket = "tf-module-datasync-mkolarek-development"
     destination_bucket = "tf-module-datasync-mkolarek-production"
     shared_config_files = "/home/marko/.aws/config"

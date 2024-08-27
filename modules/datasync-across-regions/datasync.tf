@@ -18,7 +18,7 @@ resource "aws_datasync_location_s3" "destination-location" {
   }
 }
 
-resource "aws_datasync_task" "mongodb" {
+resource "aws_datasync_task" "migrate" {
   provider                 = aws.source-profile-destination-region
   destination_location_arn = aws_datasync_location_s3.destination-location.arn
   name                     = "migrate-${var.source_bucket}"
